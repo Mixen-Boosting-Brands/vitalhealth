@@ -1,0 +1,522 @@
+// Global styles
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'circular_stdlight', sans-serif;
+    position: relative;
+    color: $text-black;
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    float: left;
+}
+
+section {
+    h1 {
+        @include font-size(4rem);
+    }
+}
+
+.mh-100 {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    @include transition(ease, 0.3s);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'circular_stdblack', sans-serif;
+}
+
+h1 {
+    line-height: 1;
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+.py-60 {
+    padding: 60px 0;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.py-30 {
+    padding: 30px 0;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.whatsapp {
+    @include whatsapp-button;
+}
+
+.text-purple {
+    color: $text-purple;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 15px 30px;
+    // color: ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    @include transition(ease, 0.2s);
+
+    #logo-navbar {
+        width: 150px;
+        @include transition(ease, 0.2s);
+    }
+
+    nav {
+        text-transform: uppercase;
+
+        ul {
+            margin-bottom: 0;
+
+            .list-inline-item:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    #shopping-cart,
+    #mburger {
+        // color: ;
+        font-size: 2rem;
+
+        &:hover,
+        &:focus {
+            // color: ;
+        }
+    }
+}
+
+.navbar-scroll {
+    background: rgb(79,135,19);
+    padding: 10px 30px !important;
+    @include transition(ease, 0.3s);
+
+    #logo-navbar {
+        width: 100px !important;
+    }
+
+    #mburger {
+        // color: !important;
+    }
+}
+
+#mapa {
+    line-height: 0;
+    
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#jumbotron {
+    @include background('../images/bg-jumbotron.jpg', center, cover);
+    color: $text-white;
+    min-height: 100vh;
+    position: relative;
+
+    .overlay {
+        background: rgb(79,135,19);
+        background: linear-gradient(180deg, rgba(79,135,19,1) 0%, rgba(75,132,14,0.22314863445378152) 50%);
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        @include font-size(3rem);
+    }
+
+    .row {
+        min-height: 100vh;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+#descanso-vegetales {
+    /*
+    @include background('../images/bg-descanso-vegetales.jpg', center, cover);
+    min-height: 30vh;
+    */
+
+    .bg-descanso-vegetales {
+        min-width: 100%;
+    }
+}
+
+#nuestros-productos {
+    background: linear-gradient(111.1deg, #EBF3DD -3.43%, #C5E3A4 91.48%);
+    box-shadow: 2px 25px 24px rgba(83, 112, 49, 0.3);
+    color: #719349;
+    position: relative;
+
+    h1,
+    .boton,
+    .btn {
+        position: relative;
+        z-index: 2;
+    }
+
+    .boton {
+        border-radius: 12px;
+        box-shadow: 14px 11px 13px rgba(0, 0, 0, 0.2);
+        color: $text-white;
+        width: 100%;
+        margin-bottom: 1.4rem;
+        min-height: 300px;
+        float: left;
+        padding: 30px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        overflow: hidden;
+        @include transition(ease, 0.3s);
+
+        a,
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        a {
+            z-index: 2;
+        }
+
+        .overlay {
+            background: linear-gradient(180deg, rgba(216, 255, 209, 0.9) -15.51%, rgba(91, 137, 84, 0.9) 100%);
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                margin-bottom: 0;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            @include transform-scale(1.05);
+        }
+    }
+
+    @for $i from 1 through 6 {
+        .boton-#{$i} {
+            @include background('../images/bg-boton-productos-#{$i}.png', center, contain);
+        }
+    }
+      
+    .btn {
+        box-shadow: 0px 4px 16px 7px rgba(255,255,255,0.33), 5px 5px 2px 1px rgba(0,0,0,0.25);
+        color: $text-green;
+    }
+
+    .decor-nuestros-productos {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        @include absolute-center-y;
+    }
+}
+
+#los-mas-vendidos {
+    background: linear-gradient(111.1deg, #779643 -3.43%, #D5FFA8 91.48%);
+    box-shadow: 2px 25px 24px rgba(83, 112, 49, 0.3);
+    position: relative;
+
+    h1 {
+        color: $text-white;
+    }
+
+    .swiper-los-mas-vendidos {
+        .elemento {
+            background: linear-gradient(180deg, rgba(237, 255, 208, 0.83) -15.51%, #D2FF9F 100%);
+            box-shadow: 14px 11px 13px rgba(0, 0, 0, 0.2);
+            border-radius: 25px;
+            padding: 100px 30px;
+            width: 100%;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .contenido {
+                color: $text-brown;
+                text-align: center;
+                text-transform: uppercase;
+
+                h2 {
+                    margin-bottom: 2rem;
+                }
+
+                .btn {
+                    border-color: $text-brown;
+                    box-shadow: none;
+                    color: $text-brown;
+                    margin-top: 2rem;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: $primary;
+        }
+    }
+
+    .btn {
+        box-shadow: 0px 4px 16px 7px rgba(255, 255, 255, 0.33), 5px 5px 2px 1px rgba(0, 0, 0, 0.25);
+    }
+}
+
+#que-es-vitalhealth {
+    background: #E4FEE0;
+    color: #63A76A;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    .triangulo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-color: transparent transparent #E4FEE0 transparent;
+        transform: rotate(0deg);
+        z-index: 1;
+    }
+
+    .texto-blanco {
+        color: $text-white;
+    }
+
+    h1,
+    h2,
+    img,
+    p {
+        position: relative;
+        z-index: 2;
+    }
+
+    h1,
+    h2 {
+        color: #395736;
+    }
+
+    img {
+        margin: 1.4rem 0;
+    }
+
+    .fondo-verde {
+        background: #669269;
+        width: 100%;
+        float: left;
+    }
+}
+
+.fondo-blanco {
+    h1 {
+        color: $text-blue;
+    }
+}
+
+#fabricacion-vitalhealth {
+    position: relative;
+
+    h1,
+    p {
+        position: relative;
+        z-index: 2;
+    }
+
+    img {
+        position: relative;
+        @include absolute-center-x;
+    }
+}
+
+#certificaciones,
+.interna {
+    padding-bottom: 100px;
+    position: relative;
+
+    a {
+        color: $text-black;
+    }
+
+    h1 {
+        color: $text-green;
+        text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        bottom: 0;
+        content: '';
+        z-index: 1;
+    }
+
+    &::before {
+        @include background('../images/before-certificaciones.png', center, contain);
+        left: 26%;
+        -webkit-transform: translateX(-26%);
+            -ms-transform: translateX(-26%);
+                transform: translateX(-26%);
+        width: 112px;
+        height: 50px;
+    }
+
+    &::after {
+        @include background('../images/after-certificaciones.png', center, contain);
+        left: 76%;
+        -webkit-transform: translateX(-76%);
+            -ms-transform: translateX(-76%);
+                transform: translateX(-76%);
+        width: 150px;
+        height: 50px;
+    }
+}
+
+#oportunidad-de-crecimiento-top {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        min-width: 100%;
+    }
+
+    .titulo {
+        position: relative;
+        background-color: $primary;
+        border-radius: 0px 83px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+
+        h1 {
+            margin-bottom: 0;
+        }
+    }
+}
+
+#oportunidad-de-crecimiento-bottom {
+    position: relative;
+
+    h2 {
+        color: $text-light-green;
+        @include font-size(3.4rem);
+    }
+}
+
+footer {
+    background: linear-gradient(111.1deg, #AAC282 -3.43%, #4F8713 91.48%);
+    box-shadow: 2px 25px 24px rgba(83, 112, 49, 0.3), inset 0px 32px 40px 1px rgba(0, 0, 0, 0.2);
+    color: $text-white;
+    text-align: center;
+
+    .logo {
+        max-width: 60%;
+    }
+
+    .social,
+    .formas-de-pago {
+        i {
+            @include font-size(2rem);
+        }
+    }
+
+    .list-inline-item {
+        vertical-align: middle;
+    }
+
+    .list-inline-item:not(:last-child) {
+        margin-right: 1rem;
+    }
+    
+    address {
+        margin-bottom: 0;
+    }
+}
+
+.interna {
+    .item {
+        background: linear-gradient(77.38deg, #F3F3F3 10.07%, #FFFFFF 70.32%);
+        box-shadow: 10px 8px 21px rgba(0, 0, 0, 0.19);
+        border-radius: 34px;
+        border: none;
+        @include transition(ease, 0.3s);
+
+        .thumbnail {
+            background: radial-gradient(74.7% 74.7% at 50% 50%, #FFFFFF 0%, rgba(227, 227, 227, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #E2E2E2;
+            border-radius: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+
+            .card-img-top {
+                max-width: 50%;
+            }
+        }
+
+        i {
+            @include font-size(2rem);
+        }
+
+        &:hover,
+        &:focus {
+            @include transform-scale(1.05);
+        }
+    }
+}

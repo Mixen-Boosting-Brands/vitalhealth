@@ -1,0 +1,216 @@
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+    #certificaciones,
+    .interna {
+        &::before {
+            width: 150px;
+            height: 67px;
+        }
+    
+        &::after {
+            width: 200px;
+            height: 67px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+    #certificaciones,
+    .interna {
+        &::before {
+            width: 150px;
+            height: 67px;
+        }
+    
+        &::after {
+            width: 200px;
+            height: 67px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+    #descanso-vegetales {
+        max-height: 400px;
+    }
+
+    #nuestros-productos {
+        &::before {
+            @include background('../images/before-nuestros-productos.png', center, contain);
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            width: 227px;
+            height: 500px;
+            content: '';
+            z-index: 1;
+        }
+    }
+
+    #los-mas-vendidos {
+        &::after {
+            @include background('../images/after-los-mas-vendidos.png', center, contain);
+            position: absolute;
+            bottom: -186px;
+            right: -40px;
+            width: 183px;
+            height: 364px;
+            content: '';
+            z-index: 2;
+        }
+    }
+
+    #que-es-vitalhealth {
+        background: linear-gradient(112deg, #669269 6.47%, #A3D4A8 63.95%);
+
+        .triangulo {
+            border-width: 0 0 764px 764px;
+        }
+
+        .fondo-verde {
+            background: transparent;
+        }
+
+        &::before {
+            @include background('../images/que-es-vitalhealth/before-que-es-vitalhealth.png', center, contain);
+            position: absolute;
+            bottom: 0;
+            left: -40px;
+            width: 215px;
+            height: 300px;
+            content: '';
+        }
+    }
+
+    #fabricacion-vitalhealth {
+        &::before {
+            @include background('../images/before-fabricacion-vitalhealth.png', center, contain);
+            position: absolute;
+            bottom: -300px;
+            left: -130px;
+            width: 227px;
+            height: 700px;
+            content: '';
+            z-index: 1;
+        }
+    }
+
+    #certificaciones,
+    .interna {
+        padding-bottom: 180px;
+
+        &::before {
+            width: 240px;
+            height: 107px;
+        }
+    
+        &::after {
+            width: 320px;
+            height: 107px;
+        }
+    }
+
+    #oportunidad-de-crecimiento-top {
+        max-height: 400px;
+        
+        .titulo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $primary;
+            border-radius: 0px 83px 0px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            width: 60%;
+            height: 60%;
+        }
+    }
+
+    #oportunidad-de-crecimiento-bottom {
+        &::before {
+            @include background('../images/before-oportunidad-de-crecimiento-bottom.png', center, contain);
+            position: absolute;
+            bottom: 0;
+            left: -30px;
+            width: 254px;
+            height: 267px;
+            content: '';
+            z-index: 1;
+        }
+
+        &::after {
+            @include background('../images/after-oportunidad-de-crecimiento-bottom.png', center, contain);
+            position: absolute;
+            top: 30px;
+            right: -30px;
+            width: 242px;
+            height: 347px;
+            content: '';
+            z-index: 1;
+        }
+    }
+
+    footer {
+        text-align: left;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+    #que-es-vitalhealth {
+        .triangulo {
+            border-width: 0px 0 900px 900px;
+        }
+    }
+
+    #fabricacion-vitalhealth {
+        &::before {
+            left: -104px;
+        }
+    }
+
+    #oportunidad-de-crecimiento-top {
+        .titulo {
+            width: 54%;
+        }
+    }
+
+    #oportunidad-de-crecimiento-bottom {
+        &::before {
+            bottom: 0;
+
+        }
+
+        &::after {
+            top: 60px;
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@include media-breakpoint-up(xxl) {
+    #que-es-vitalhealth {
+        .triangulo {
+            border-width: 0px 0 1090px 1090px;
+        }
+    }
+
+    #fabricacion-vitalhealth {
+        &::before {
+            left: -86px;
+        }
+    }
+
+    #oportunidad-de-crecimiento-top {
+        .titulo {
+            width: 48%;
+        }
+    }
+}
