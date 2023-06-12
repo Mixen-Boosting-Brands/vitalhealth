@@ -343,4 +343,16 @@
         </div>
     </section>
 
+    <section id="jumbotron">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                    <h1 class="mb-4">Comienza a cambiar tu vida con VitalHealth</h1>
+                    <a class="btn btn-outline-primary btn-lg anchor" href="#los-mas-vendidos">Conoce más productos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <?php get_footer(); ?>
