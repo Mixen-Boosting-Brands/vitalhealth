@@ -32,9 +32,18 @@ get_header( 'shop' ); ?>
 	?>
 
 		<?php while ( have_posts() ) : ?>
-			<?php the_post(); ?>
 
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+			<section class="interna py-60">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<?php the_post(); ?>
+
+							<?php wc_get_template_part( 'content', 'single-product' ); ?>
+						</div>
+					</div>
+				</div>
+			</section>
 
 		<?php endwhile; // end of the loop. ?>
 
