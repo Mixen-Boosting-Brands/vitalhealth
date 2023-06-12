@@ -87,7 +87,7 @@
         </div>
     </div>
 
-    <header id="navbar">
+    <header id="navbar" <?php if( !is_home() ): ?>class="navbar-scroll"<?php endif; ?>>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6 col-md-2 my-auto">
