@@ -571,60 +571,6 @@ function lv2_add_bootstrap_input_classes( $args, $key, $value = null ) {
 }
 add_filter('woocommerce_form_field_args','lv2_add_bootstrap_input_classes',10,3);
 
-add_filter( 'woocommerce_product_tabs', 'woo_custom_product_tabs' );
-function woo_custom_product_tabs( $tabs ) {
-
-    $tabs['products_review_tab'] = array(
-        'title'     => __( 'Reviews', 'woocommerce' ),
-        'priority'  => 120,
-        'callback'  => 'products_review_tab_content'
-    );
-
-    return $tabs;
-
-}
-
-function products_review_tab_content() {
-    global $product;
-    echo do_shortcode( '[product_reviews_shortcode id="'.$product->id.'"]' );
-}
-
-function product_reviews_shortcode( $atts ) {
-    
-    $atts = shortcode_atts( array(
-        'id' => ''
-    ), $atts, 'product_reviews_shortcode' );
-
-    $comments = get_comments( array(
-        'post_id' => $atts['id'] 
-    ) );
-
-    if ( ! $comments ) return '';
-
-    $html .= '<div class="woocommerce-tabs"><div id="reviews"><ol class="commentlist">';
-
-    foreach ( $comments as $comment ) {   
-      $rating = intval( get_comment_meta( $comment->comment_ID, 'rating', true ) );
-      $html .= '<li class="review">';
-      $html .= get_avatar( $comment, '60' );
-      $html .= '<div class="comment-text">';
-      if ( $rating ) $html .= wc_get_rating_html( $rating );
-      $html .= '<p class="meta"><strong class="woocommerce-review__author">';
-      $html .= get_comment_author( $comment );
-      $html .= '</strong></p>';
-      $html .= '<div class="description">';
-      $html .= $comment->comment_content;
-      $html .= '</div></div>';
-      $html .= '</li>';
-    }
-
-    $html .= '</ol></div></div>';
-
-    return $html;
-
-}
-add_shortcode( 'product_reviews_shortcode', 'product_reviews_shortcode' );
-
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
