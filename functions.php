@@ -465,3 +465,162 @@ function html5_shortcode_demo( $atts, $content = null ) {
 function html5_shortcode_demo_2( $atts, $content = null ) {
     return '<h2>' . $content . '</h2>';
 }
+
+/*------------------------------------*\
+	WooCommerce Hooks
+\*------------------------------------*/
+
+// Update items in cart via AJAX
+function my_header_add_to_cart_fragment( $fragments ) {
+    ob_start();
+    $count = WC()->cart->cart_contents_count;
+    ?>
+    <li class="nav-item">
+    <?php if ( $count > 0 ) { ?>
+        <a class="nav-link cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'Carrito' ); ?>">
+            <i class="fas fa-shopping-cart"></i> <span class="d-none d-lg-inline-block">Carrito</span> (<span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>)
+        </a>
+    <?php } ?>
+    </li>
+    <?php
+ 
+    $fragments['a.cart-contents'] = ob_get_clean();
+     
+    return $fragments;
+}
+add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment' );
+
+// Add the Bootstrap input classes to all WooCommerce input fields
+function lv2_add_bootstrap_input_classes( $args, $key, $value = null ) {
+
+	/* This is not meant to be here, but it serves as a reference
+	of what is possible to be changed.
+	$defaults = array(
+		'type'			  => 'text',
+		'label'			 => '',
+		'description'	   => '',
+		'placeholder'	   => '',
+		'maxlength'		 => false,
+		'required'		  => false,
+		'id'				=> $key,
+		'class'			 => array(),
+		'label_class'	   => array(),
+		'input_class'	   => array(),
+		'return'			=> false,
+		'options'		   => array(),
+		'custom_attributes' => array(),
+		'validate'		  => array(),
+		'default'		   => '',
+	); */
+
+	// Start field type switch case
+	switch ( $args['type'] ) {
+
+		case "select" :  /* Targets all select input type elements, except the country and state select input types */
+			$args['class'][] = 'form-group'; // Add a class to the field's html element wrapper - woocommerce input types (fields) are often wrapped within a <p></p> tag
+			$args['input_class'] = array('form-control', 'input-lg'); // Add a class to the form input itself
+			//$args['custom_attributes']['data-plugin'] = 'select2';
+			$args['label_class'] = array('control-label');
+			$args['custom_attributes'] = array( 'data-plugin' => 'select2', 'data-allow-clear' => 'true', 'aria-hidden' => 'true',  ); // Add custom data attributes to the form input itself
+		break;
+
+		case 'country' : /* By default WooCommerce will populate a select with the country names - $args defined for this specific input type targets only the country select element */
+			$args['class'][] = 'form-group single-country';
+			$args['label_class'] = array('control-label');
+		break;
+
+		case "state" : /* By default WooCommerce will populate a select with state names - $args defined for this specific input type targets only the country select element */
+			$args['class'][] = 'form-group'; // Add class to the field's html element wrapper
+			$args['input_class'] = array('form-control', 'input-lg'); // add class to the form input itself
+			//$args['custom_attributes']['data-plugin'] = 'select2';
+			$args['label_class'] = array('control-label');
+			$args['custom_attributes'] = array( 'data-plugin' => 'select2', 'data-allow-clear' => 'true', 'aria-hidden' => 'true',  );
+		break;
+
+
+		case "password" :
+		case "text" :
+		case "email" :
+		case "tel" :
+		case "number" :
+			$args['class'][] = 'form-group';
+			//$args['input_class'][] = 'form-control input-lg'; // will return an array of classes, the same as bellow
+			$args['input_class'] = array('form-control', 'input-lg');
+			$args['label_class'] = array('control-label');
+		break;
+
+		case 'textarea' :
+			$args['input_class'] = array('form-control', 'input-lg');
+			$args['label_class'] = array('control-label');
+		break;
+
+		case 'checkbox' :
+		break;
+
+		case 'radio' :
+		break;
+
+		default :
+			$args['class'][] = 'form-group';
+			$args['input_class'] = array('form-control', 'input-lg');
+			$args['label_class'] = array('control-label');
+		break;
+	}
+
+	return $args;
+}
+add_filter('woocommerce_form_field_args','lv2_add_bootstrap_input_classes',10,3);
+
+add_filter( 'woocommerce_product_tabs', 'woo_custom_product_tabs' );
+function woo_custom_product_tabs( $tabs ) {
+
+    $tabs['products_review_tab'] = array(
+        'title'     => __( 'Reviews', 'woocommerce' ),
+        'priority'  => 120,
+        'callback'  => 'products_review_tab_content'
+    );
+
+    return $tabs;
+
+}
+
+function products_review_tab_content() {
+    global $product;
+    echo do_shortcode( '[product_reviews_shortcode id="'.$product->id.'"]' );
+}
+
+function product_reviews_shortcode( $atts ) {
+    
+    $atts = shortcode_atts( array(
+        'id' => ''
+    ), $atts, 'product_reviews_shortcode' );
+
+    $comments = get_comments( array(
+        'post_id' => $atts['id'] 
+    ) );
+
+    if ( ! $comments ) return '';
+
+    $html .= '<div class="woocommerce-tabs"><div id="reviews"><ol class="commentlist">';
+
+    foreach ( $comments as $comment ) {   
+      $rating = intval( get_comment_meta( $comment->comment_ID, 'rating', true ) );
+      $html .= '<li class="review">';
+      $html .= get_avatar( $comment, '60' );
+      $html .= '<div class="comment-text">';
+      if ( $rating ) $html .= wc_get_rating_html( $rating );
+      $html .= '<p class="meta"><strong class="woocommerce-review__author">';
+      $html .= get_comment_author( $comment );
+      $html .= '</strong></p>';
+      $html .= '<div class="description">';
+      $html .= $comment->comment_content;
+      $html .= '</div></div>';
+      $html .= '</li>';
+    }
+
+    $html .= '</ol></div></div>';
+
+    return $html;
+
+}
+add_shortcode( 'product_reviews_shortcode', 'product_reviews_shortcode' );

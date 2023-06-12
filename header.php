@@ -122,10 +122,26 @@
                 <div class="col-6 col-md-2 my-auto text-end">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
-                            <a id="shopping-cart" href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>
+                            <a href="<?php echo esc_url( get_permalink( 9 ) ); ?>">
+                            <?php if ( is_user_logged_in() ): ?>
+                                <i class="fa-solid fa-user"></i> <span class="d-none d-lg-inline-block">Mi cuenta</span>
+                            <?php else: ?>
+                                <i class="fa-solid fa-user"></i> <span class="d-none d-lg-inline-block">Acceder</span>
+                            <?php endif; ?>
                             </a>
                         </li>
+                    <?php 
+                        if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) :
+                        $count = WC()->cart->cart_contents_count;
+                    ?>
+                        <li class="list-inline-item">
+                        <?php if ( $count > 0 ) : ?>
+                            <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'Carrito' ); ?>">
+                                <i class="fa-solid fa-cart-shopping"></i> <span class="d-none d-lg-inline-block">Carrito</span> (<span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>)
+                            </a>
+                        <?php endif; ?>
+                        </li>
+                    <?php endif; ?>
                         <li class="list-inline-item d-md-none">
                             <a id="mburger" href="javascript:void(0)">
                                 <i class="fas fa-bars"></i>
