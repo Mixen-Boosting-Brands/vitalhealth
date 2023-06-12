@@ -14,12 +14,12 @@
 .woocommerce button.button.alt,
 .woocommerce input.button.alt {
     background-color: $primary !important;
-    color: $font-white !important;
+    color: $text-white !important;
 
     &:hover,
     &:focus {
         background-color: $secondary !important;
-        color: $font-white !important;
+        color: $text-white !important;
     }
 }
 
@@ -74,7 +74,7 @@
     &:hover,
     &:focus {
         background-color: $secondary !important;
-        color: $font-white !important;
+        color: $text-white !important;
     }
 }
 
@@ -84,7 +84,7 @@
     &:hover,
     &:focus {
         background-color: $secondary !important;
-        color: $font-white !important;
+        color: $text-white !important;
     }
 }
 
