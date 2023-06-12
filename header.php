@@ -122,7 +122,7 @@
                 <div class="col-6 col-md-2 my-auto text-end">
                     <ul class="list-inline text-uppercase mb-0">
                         <li class="list-inline-item">
-                            <a href="<?php echo esc_url( get_permalink( 8 ) ); ?>">
+                            <a id="cuenta" href="<?php echo esc_url( get_permalink( 8 ) ); ?>">
                             <?php if ( is_user_logged_in() ): ?>
                                 <i class="fa-solid fa-user"></i> <span class="d-none d-lg-inline-block">Mi cuenta</span>
                             <?php else: ?>
