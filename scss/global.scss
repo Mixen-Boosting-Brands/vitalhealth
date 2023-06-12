@@ -126,7 +126,8 @@ header {
     }
 }
 
-.navbar-scroll {
+.navbar-scroll,
+.navbar-interna {
     background: rgb(79,135,19);
     padding: 10px 30px !important;
     @include transition(ease, 0.3s);
