@@ -1,5 +1,17 @@
 <?php get_header(); ?>
 
+    <section id="jumbotron">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                    <h1 class="mb-4">Comienza a cambiar tu vida con VitalHealth</h1>
+                    <a class="btn btn-outline-primary btn-lg anchor" href="#los-mas-vendidos">Conoce más productos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="descanso-vegetales">
         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/bg-descanso-vegetales.jpg" alt="" class="img-fluid bg-descanso-vegetales">
     </section>
@@ -338,18 +350,6 @@
                             <p>Plan de recompensas que paga hasta el 80% de puntos de volumen.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="jumbotron">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 my-auto">
-                    <h1 class="mb-4">Comienza a cambiar tu vida con VitalHealth</h1>
-                    <a class="btn btn-outline-primary btn-lg anchor" href="#los-mas-vendidos">Conoce más productos</a>
                 </div>
             </div>
         </div>
