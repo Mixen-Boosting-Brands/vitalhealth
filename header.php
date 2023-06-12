@@ -32,16 +32,16 @@
             <nav>
                 <ul class="list-unstyled text-uppercase">
                     <li>
-                        <a class="anchor" id="btn-nav-1" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#jumbotron">Home</a>
+                        <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> id="btn-nav-1" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#jumbotron">Home</a>
                     </li>
                     <li>
-                        <a class="anchor" id="btn-nav-2" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#que-es-vitalhealth">Compañía</a>
+                        <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> id="btn-nav-2" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#que-es-vitalhealth">Compañía</a>
                     </li>
                     <li>
-                        <a class="anchor" id="btn-nav-3" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#nuestros-productos">Productos</a>
+                        <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> id="btn-nav-3" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#nuestros-productos">Productos</a>
                     </li>
                     <li>
-                        <a class="anchor" id="btn-nav-4" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#oportunidad-de-crecimiento-top">Oportunidad</a>
+                        <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> id="btn-nav-4" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#oportunidad-de-crecimiento-top">Oportunidad</a>
                     </li>
                     <li>
                         <a href="<?php echo esc_url( get_permalink( 5 ) ); ?>">Tienda</a>
@@ -99,16 +99,16 @@
                     <nav>
                         <ul class="list-inline text-uppercase">
                             <li class="list-inline-item">
-                                <a class="anchor" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#jumbotron">Home</a>
+                                <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#jumbotron">Home</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="anchor" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#que-es-vitalhealth">Compañía</a>
+                                <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#que-es-vitalhealth">Compañía</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="anchor" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#nuestros-productos">Productos</a>
+                                <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#nuestros-productos">Productos</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="anchor" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#oportunidad-de-crecimiento-top">Oportunidad</a>
+                                <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#oportunidad-de-crecimiento-top">Oportunidad</a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="<?php echo esc_url( get_permalink( 5 ) ); ?>">Tienda</a>
