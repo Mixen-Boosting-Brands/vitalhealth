@@ -136,7 +136,7 @@
                     ?>
                         <li class="list-inline-item">
                         <?php if ( $count > 0 ) : ?>
-                            <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'Carrito' ); ?>">
+                            <a id="shopping-cart" class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'Carrito' ); ?>">
                                 <i class="fa-solid fa-cart-shopping"></i> <span class="d-none d-lg-inline-block">Carrito</span> (<span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>)
                             </a>
                         <?php endif; ?>
