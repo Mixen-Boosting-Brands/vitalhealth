@@ -30,7 +30,7 @@
                 <img class="logo img-fluid" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.svg" alt="Logo de VitalHealth">
             </a>
             <nav>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled text-uppercase">
                     <li>
                         <a class="anchor" id="btn-nav-1" href="#jumbotron">Home</a>
                     </li>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-md-8 text-center my-auto d-none d-md-block">
                     <nav>
-                        <ul class="list-inline">
+                        <ul class="list-inline text-uppercase">
                             <li class="list-inline-item">
                                 <a class="anchor" href="#jumbotron">Home</a>
                             </li>
@@ -120,7 +120,7 @@
                     </nav>
                 </div>
                 <div class="col-6 col-md-2 my-auto text-end">
-                    <ul class="list-inline mb-0">
+                    <ul class="list-inline text-uppercase mb-0">
                         <li class="list-inline-item">
                             <a href="<?php echo esc_url( get_permalink( 8 ) ); ?>">
                             <?php if ( is_user_logged_in() ): ?>
