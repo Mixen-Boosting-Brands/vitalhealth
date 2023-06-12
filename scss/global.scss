@@ -499,6 +499,15 @@ footer {
 }
 
 .interna {
+    a {
+        color: $text-blue;
+
+        &:hover,
+        &:focus {
+            color: $text-purple;
+        }
+    }
+
     .item {
         background: linear-gradient(77.38deg, #F3F3F3 10.07%, #FFFFFF 70.32%);
         box-shadow: 10px 8px 21px rgba(0, 0, 0, 0.19);

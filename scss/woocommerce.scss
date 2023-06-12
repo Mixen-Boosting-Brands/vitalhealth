@@ -5,6 +5,14 @@
     @include transition(ease, 0.2s);
 }
 
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit:hover,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:hover,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button:hover,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button:hover,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit:hover,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button:hover,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:hover,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button:hover,
 .woocommerce #respond input#submit,
 .woocommerce a.button,
 .woocommerce button.button,
