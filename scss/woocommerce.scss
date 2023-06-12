@@ -1,0 +1,101 @@
+.woocommerce div.product form.cart .button,
+.woocommerce ul.products li.product .button {
+    font-weight: normal;
+    text-transform: uppercase;
+    @include transition(ease, 0.2s);
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    background-color: $primary !important;
+    color: $font-white !important;
+
+    &:hover,
+    &:focus {
+        background-color: $secondary !important;
+        color: $font-white !important;
+    }
+}
+
+.woocommerce {
+    .col-1,
+    .col-2 {
+        max-width: none;
+    }
+}
+
+.woocommerce {
+    form {
+        .form-row {
+            label {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.woocommerce-input-wrapper {
+    width: 100%;
+}
+
+.woocommerce ul.products li.product .price,
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+    color: #BC2848 !important;
+}
+
+#reviews.cr-reviews-ajax-reviews .cr-qna-search-icon,
+.cr-all-reviews-shortcode .cr-qna-search-icon,
+#cr_qna.cr-qna-block div.cr-qna-search-block .cr-qna-search-icon {
+    fill: $primary !important;
+}
+
+#cr_qna.cr-qna-block .cr-input-text,
+.cr-ajax-search input[type="text"] {
+    border-radius: .375rem !important;
+}
+
+#cr_qna.cr-qna-block .cr-input-text:focus,
+.cr-ajax-search input[type="text"]:focus {
+    border-radius: .375rem !important;
+    box-shadow:  0 0 1px $primary !important;
+}
+
+.cr-qna-block div.cr-qna-search-block button.cr-qna-ask-button {
+    background-color: $primary !important;
+    border-radius: 3px !important;
+
+    &:hover,
+    &:focus {
+        background-color: $secondary !important;
+        color: $font-white !important;
+    }
+}
+
+#cr_qna.cr-qna-block div.cr-qna-new-q-overlay .cr-qna-new-q-form .cr-qna-new-q-form-s button.cr-qna-new-q-form-s-b.cr-q-active {
+    background-color: $primary !important;
+
+    &:hover,
+    &:focus {
+        background-color: $secondary !important;
+        color: $font-white !important;
+    }
+}
+
+.cr-review-card-content {
+    visibility: visible !important;
+    border-color: #ebebeb !important;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.woocommerce .star-rating::before,
+.woocommerce .star-rating span::before {
+    color: #FFD707 !important;
+}
