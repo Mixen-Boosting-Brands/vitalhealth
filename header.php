@@ -44,7 +44,7 @@
                         <a class="anchor" id="btn-nav-4" href="#oportunidad-de-crecimiento-top">Oportunidad</a>
                     </li>
                     <li>
-                        <a class="anchor" id="btn-nav-5" href="#">Tienda</a>
+                        <a class="anchor" id="btn-nav-5" href="<?php echo esc_url( get_permalink( 5 ) ); ?>">Tienda</a>
                     </li>
                 </ul>
             </nav>
@@ -111,7 +111,7 @@
                                 <a class="anchor" href="#oportunidad-de-crecimiento-top">Oportunidad</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="anchor" href="#">Tienda</a>
+                                <a class="anchor" href="<?php echo esc_url( get_permalink( 5 ) ); ?>">Tienda</a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="anchor" href="#contacto">Contáctanos</a>
@@ -122,7 +122,7 @@
                 <div class="col-6 col-md-2 my-auto text-end">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
-                            <a href="<?php echo esc_url( get_permalink( 9 ) ); ?>">
+                            <a href="<?php echo esc_url( get_permalink( 8 ) ); ?>">
                             <?php if ( is_user_logged_in() ): ?>
                                 <i class="fa-solid fa-user"></i> <span class="d-none d-lg-inline-block">Mi cuenta</span>
                             <?php else: ?>
