@@ -37,7 +37,7 @@ get_header( 'shop' ); ?>
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							
+							<?php the_post(); ?>
 
 							<?php wc_get_template_part( 'content', 'single-product' ); ?>
 						</div>
