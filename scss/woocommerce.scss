@@ -24,6 +24,7 @@
 .single_add_to_cart_button {
     background: linear-gradient(97.71deg, #CBFFC7 -22.36%, #7FAE7B 102.86%);
     border-radius: 4px;
+    text-align: center;
 
     &:hover,
     &:focus {
@@ -120,7 +121,7 @@
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 
     &:hover,
     &:focus {
