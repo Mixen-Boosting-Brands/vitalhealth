@@ -142,7 +142,9 @@
 .woocommerce div.product div.images img,
 .woocommerce ul.products li.product a img {
     max-width: 146px !important;
+    max-height: 222px !important;
     margin: 0 0 auto !important;
+    width: auto !important;
 }
 
 .woocommerce ul.products li.product .woocommerce-loop-product__title {
