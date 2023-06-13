@@ -111,3 +111,7 @@
     color: $text-blue !important;
     text-shadow: none !important;
 }
+
+.price {
+    @include font-size(1.6rem);
+}
