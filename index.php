@@ -75,7 +75,7 @@
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <a class="btn btn-outline-primary btn-lg">Ver todos los productos</a>
+                    <a class="btn btn-outline-primary btn-lg" href="<?php echo esc_url( get_permalink( 5 ) ); ?>">Ver todos los productos</a>
                 </div>
             </div>
         </div>
