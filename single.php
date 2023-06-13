@@ -4,7 +4,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h1 class="text-uppercase"><?php the_title(); ?></h1>
+                    <h1 class="<?php if ( 'product' == get_post_type() ): ?>titulo-producto<?php endif; ?> text-uppercase">
+						<?php the_title(); ?>
+					</h1>
                 </div>
 			<?php if ( have_posts()) : while ( have_posts() ) : the_post(); ?>
 				<div class="col-12">
