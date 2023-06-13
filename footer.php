@@ -12,18 +12,18 @@
                             </h5>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.instagram.com/" target="_blank">
+                            <a href="https://www.instagram.com/vitalhealthcuu/" target="_blank">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.facebook.com/" target="_blank">
+                            <a href="https://www.facebook.com/profile.php?id=100088512334342&mibextid=ZbWKwL" target="_blank">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.youtube.com/" target="_blank">
-                                <i class="fa-brands fa-youtube"></i>
+                            <a href="https://www.tiktok.com/@vitalhealthcuu" target="_blank">
+                                <i class="fa-brands fa-tiktok"></i>
                             </a>
                         </li>
                     </ul>
