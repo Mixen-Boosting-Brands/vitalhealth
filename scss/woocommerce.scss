@@ -110,8 +110,6 @@
 }
 
 .woocommerce div.product div.images.woocommerce-product-gallery {
-    width: 100% !important;
-    float: left !important;
     background: radial-gradient(74.7% 74.7% at 50% 50%, #FFFFFF 0%, rgba(227, 227, 227, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #E2E2E2 !important;
     box-shadow: 10px 8px 21px rgba(0, 0, 0, 0.19);
     border-radius: 34px !important;
