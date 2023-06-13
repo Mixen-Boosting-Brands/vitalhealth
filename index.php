@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-6 my-auto">
                     <h1 class="mb-4">Comienza a cambiar tu vida con VitalHealth</h1>
-                    <a class="btn btn-outline-primary btn-lg anchor" href="#los-mas-vendidos">Conoce más productos</a>
+                    <a class="btn btn-outline-primary btn-lg anchor" href="#nuestros-productos">Conoce más productos</a>
                 </div>
             </div>
         </div>
@@ -199,7 +199,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <a class="btn btn-outline-primary btn-lg">Ver todos los productos</a>
+                    <a class="btn btn-outline-primary btn-lg" href="<?php echo esc_url( get_permalink( 5 ) ); ?>">Ver todos los productos</a>
                 </div>
             </div>
         </div>
