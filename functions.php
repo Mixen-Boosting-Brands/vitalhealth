@@ -477,7 +477,7 @@ function my_header_add_to_cart_fragment( $fragments ) {
     ?>
     <li class="nav-item">
     <?php if ( $count > 0 ) { ?>
-        <a class="nav-link cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'Carrito' ); ?>">
+        <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'Carrito' ); ?>">
             <i class="fas fa-shopping-cart"></i> <span class="d-none d-lg-inline-block">Carrito</span> (<span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>)
         </a>
     <?php } ?>
