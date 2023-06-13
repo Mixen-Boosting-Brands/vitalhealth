@@ -26,7 +26,7 @@
             <div class="row mb-5">
                 <div class="col-6 col-md-4">
                     <div class="boton boton-1">
-                        <a href="#"></a>
+                        <a href="<?php echo get_category_link( 16 ); ?>"></a>
                         <div class="overlay">
                             <h3>Nutrición de cuerpo completo</h3>
                         </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-2">
-                        <a href="#"></a>
+                        <a href="<?php echo get_category_link( 17 ); ?>"></a>
                         <div class="overlay">
                             <h3>Control de peso</h3>
                         </div>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-3">
-                        <a href="#"></a>
+                        <a href="<?php echo get_category_link( 18 ); ?>"></a>
                         <div class="overlay">
                             <h3>Energía y ejercicio</h3>
                         </div>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-4">
-                        <a href="#"></a>
+                        <a href="<?php echo get_category_link( 19 ); ?>"></a>
                         <div class="overlay">
                             <h3>Cabello y cuidado de la piel</h3>
                         </div>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-5">
-                        <a href="#"></a>
+                        <a href="<?php echo get_category_link( 20 ); ?>"></a>
                         <div class="overlay">
                             <h3>Desintoxicación</h3>
                         </div>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-6">
-                        <a href="#"></a>
+                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
                         <div class="overlay">
                             <h3>Sistema inmune</h3>
                         </div>
