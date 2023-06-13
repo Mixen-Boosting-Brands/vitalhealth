@@ -108,6 +108,6 @@
 }
 
 .product_title {
-    color: $text-blue;
-    box-shadow: none;
+    color: $text-blue !important;
+    text-shadow: none !important;
 }
