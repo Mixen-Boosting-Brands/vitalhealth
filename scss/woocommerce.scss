@@ -106,3 +106,8 @@
 .woocommerce .star-rating span::before {
     color: #FFD707 !important;
 }
+
+.product_title {
+    color: $text-blue;
+    box-shadow: none;
+}
