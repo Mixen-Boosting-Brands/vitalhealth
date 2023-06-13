@@ -571,7 +571,8 @@ function lv2_add_bootstrap_input_classes( $args, $key, $value = null ) {
 }
 add_filter('woocommerce_form_field_args','lv2_add_bootstrap_input_classes',10,3);
 
-
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
 // Add WooCommerce support to theme
 function vitalhealth_add_woocommerce_support() {
