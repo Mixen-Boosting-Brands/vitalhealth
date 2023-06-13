@@ -104,7 +104,7 @@
                                             <div class="contenido">
                                                 <h2>V-Collagen</h2>
                                                 <p>El colágeno es una proteína que contribuye a que nuestra piel se mantenga hidratada y protegida frente agentes externos</p>
-                                                <a href="#" class="btn btn-outline-primary rounded-pill">
+                                                <a href="<?php echo esc_url( get_permalink( 51 ) ); ?>" class="btn btn-outline-primary rounded-pill">
                                                     Ver más
                                                 </a>
                                             </div>
@@ -119,7 +119,7 @@
                                             <div class="contenido">
                                                 <h2>V-Itadol</h2>
                                                 <p>Con el paso del tiempo y la edad, nuestro organismo comienza a presenter ciertos cambios como el desgaste en las articulaciones</p>
-                                                <a href="#" class="btn btn-outline-primary rounded-pill">
+                                                <a href="<?php echo esc_url( get_permalink( 53 ) ); ?>" class="btn btn-outline-primary rounded-pill">
                                                     Ver más
                                                 </a>
                                             </div>
@@ -134,52 +134,7 @@
                                             <div class="contenido">
                                                 <h2>V-Italboost</h2>
                                                 <p>V-Italboost ayudará a fortalecer tu sistema inmune gracias a la mezcla óptima de vitaminas e ingredientes como la equinácea y el fenogreco</p>
-                                                <a href="#" class="btn btn-outline-primary rounded-pill">
-                                                    Ver más
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="row">
-                                    <div class="col-12 col-md-10">
-                                        <div class="elemento">
-                                            <div class="contenido">
-                                                <h2>V-Collagen</h2>
-                                                <p>El colágeno es una proteína que contribuye a que nuestra piel se mantenga hidratada y protegida frente agentes externos</p>
-                                                <a href="#" class="btn btn-outline-primary rounded-pill">
-                                                    Ver más
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="row">
-                                    <div class="col-12 col-md-10">
-                                        <div class="elemento">
-                                            <div class="contenido">
-                                                <h2>V-Itadol</h2>
-                                                <p>Con el paso del tiempo y la edad, nuestro organismo comienza a presenter ciertos cambios como el desgaste en las articulaciones</p>
-                                                <a href="#" class="btn btn-outline-primary rounded-pill">
-                                                    Ver más
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="row">
-                                    <div class="col-12 col-md-10">
-                                        <div class="elemento">
-                                            <div class="contenido">
-                                                <h2>V-Italboost</h2>
-                                                <p>V-Italboost ayudará a fortalecer tu sistema inmune gracias a la mezcla óptima de vitaminas e ingredientes como la equinácea y el fenogreco</p>
-                                                <a href="#" class="btn btn-outline-primary rounded-pill">
+                                                <a href="<?php echo esc_url( get_permalink( 67 ) ); ?>" class="btn btn-outline-primary rounded-pill">
                                                     Ver más
                                                 </a>
                                             </div>

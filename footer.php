@@ -47,8 +47,8 @@
                         </li>
                         <li class="mb-2">
                             <span class="text-uppercase">Mex</span>
-                            <a href="tel:+526624550504">
-                                +52 (662) 455 0504
+                            <a href="tel:+526142457665">
+                                +52 (614) 245 7665
                             </a>
                         </li>
                         <li>
@@ -128,7 +128,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/526624550504?text=Hola%20VitalHealth,%20necesito%20información." class="whatsapp" target="_blank">
+    <a href="https://wa.me/526142457665?text=Hola%20VitalHealth%20CUU,%20necesito%20información." class="whatsapp" target="_blank">
         <i class="fab fa-whatsapp whatsapp-icon"></i>
     </a>
 
