@@ -174,6 +174,10 @@
     }
 }
 
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.19);
+}
+
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
     background: radial-gradient(97.38% 140.49% at 54.79% 41.2%, rgba(231, 255, 237, 0.81) 0%, rgba(143, 186, 155, 0.81) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
