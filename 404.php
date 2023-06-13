@@ -7,7 +7,7 @@
                     <h1 class="text-uppercase"><?php esc_html_e( 'Error 404: Página no encontrada', 'html5blank' ); ?></h1>
                 </div>
 			<?php if ( have_posts()) : while ( have_posts() ) : the_post(); ?>
-				<div class="col-12">
+				<div class="col-12 text-center">
 					<p>La página solicitada no existe o cambió de ubicación. <a href="<?php echo esc_url( home_url() ); ?>"><?php esc_html_e( 'Regresar al inicio', 'html5blank' ); ?></a>.</p>
 				</div>
 			<?php endwhile; ?>
