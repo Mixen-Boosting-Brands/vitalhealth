@@ -40,9 +40,9 @@
                         </li>
                         <li class="mb-2">
                             <address>
-                                Villa Robledo 2<br>
-                                Villas del Sol<br>
-                                Hermosillo, Son., México 83240
+                                Salvador Díaz Casas 211<br>
+                                Col. Revolución<br>
+                                Chihuahua, Chih., México 31135
                             </address>
                         </li>
                         <li class="mb-2">
