@@ -108,6 +108,24 @@
     color: #FFD707 !important;
 }
 
+.woocommerce-loop-product__link {
+    width: 100% !important;
+    float: left !important;
+    background: radial-gradient(74.7% 74.7% at 50% 50%, #FFFFFF 0%, rgba(227, 227, 227, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #E2E2E2 !important;
+    border-radius: 34px !important;
+}
+
+.add_to_cart_button {
+    width: 100% !important;
+    float: left !important;
+}
+
+.woocommerce ul.products li.product a img {
+    width: auto !important;
+    display: inline-block !important;
+    margin: 0 0 auto !important;
+}
+
 .product_title {
     color: $text-blue !important;
     text-shadow: none !important;
