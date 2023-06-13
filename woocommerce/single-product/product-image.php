@@ -42,7 +42,7 @@ $wrapper_classes   = apply_filters(
 		<?php
 		if ( $post_thumbnail_id ) {
 			$html  = '<div class="item card"><div class="woocommerce-product-gallery__image--placeholder thumbnail">';
-			
+			$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
 			$html .= '</div></div>';
 		} else {
 			$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
