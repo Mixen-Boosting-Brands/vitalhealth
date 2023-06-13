@@ -149,6 +149,13 @@
     text-transform: uppercase;
 }
 
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+    &::before,
+    &::after {
+        border-bottom: none;
+    }
+}
+
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active,
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
     background: radial-gradient(97.38% 140.49% at 54.79% 41.2%, rgba(231, 255, 237, 0.81) 0%, rgba(143, 186, 155, 0.81) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
