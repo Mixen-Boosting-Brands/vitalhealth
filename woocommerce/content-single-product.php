@@ -45,7 +45,7 @@ if ( post_password_required() ) {
 			do_action( 'woocommerce_before_single_product_summary' );
 			?>
 		</div>
-		<div class="col-12 col-lg-9">
+		<div class="col-12 col-lg-8 offset-lg-1">
 			<div class="summary entry-summary">
 				<?php
 				/**
