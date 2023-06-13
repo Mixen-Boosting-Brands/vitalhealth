@@ -402,6 +402,11 @@ header {
         text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
+    .titulo-producto {
+        color: $text-blue;
+        text-shadow: none;
+    }
+
     &::before,
     &::after {
         position: absolute;
