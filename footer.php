@@ -64,32 +64,32 @@
                     </h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="#">
+                            <a href="<?php echo esc_url( get_permalink( 3 ) ); ?>">
                                 Políticas de privacidad
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="#">
+                            <a href="<?php echo esc_url( get_permalink( 23 ) ); ?>">
                                 Aviso de riesgos
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="#">
+                            <a href="<?php echo esc_url( get_permalink( 9 ) ); ?>">
                                 Políticas de reembolso y envío
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="#">
+                            <a href="<?php echo esc_url( get_permalink( 25 ) ); ?>">
                                 Términos y condiciones
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="#">
+                            <a href="<?php echo esc_url( get_permalink( 30 ) ); ?>">
                                 Políticas de spam
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="#">
+                            <a href="<?php echo esc_url( get_permalink( 32 ) ); ?>">
                                 Aviso legal
                             </a>
                         </li>
