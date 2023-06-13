@@ -149,6 +149,27 @@
     text-transform: uppercase;
 }
 
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    background: linear-gradient(97.71deg, #CBFFC7 -22.36%, #7FAE7B 102.86%);
+    text-transform: uppercase;
+    
+    &:hover,
+    &:focus {
+        box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.19);
+    }
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+    margin-bottom: 0;
+}
+
+.woocommerce div.product .woocommerce-tabs .panel {
+    background: linear-gradient(77.38deg, rgb(243, 243, 243) 10.07%, rgb(255, 255, 255) 70.32%);
+    box-shadow: rgba(0, 0, 0, 0.19) 10px 8px 21px;
+    border-radius: 0 0 34px 34px;
+    padding: 30px;
+}
+
 .add_to_cart_button {
     width: 100% !important;
     float: left !important;
