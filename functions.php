@@ -475,11 +475,13 @@ function my_header_add_to_cart_fragment( $fragments ) {
     ob_start();
     $count = WC()->cart->cart_contents_count;
     ?>
+    <li class="nav-item">
     <?php if ( $count > 0 ) { ?>
         <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'Carrito' ); ?>">
             <i class="fas fa-shopping-cart"></i> <span class="d-none d-lg-inline-block">Carrito</span> (<span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>)
         </a>
     <?php } ?>
+    </li>
     <?php
  
     $fragments['a.cart-contents'] = ob_get_clean();
@@ -581,47 +583,6 @@ function woo_custom_product_tabs( $tabs ) {
     return $tabs;
 
 }
-
-function products_review_tab_content() {
-    global $product;
-    echo do_shortcode( '[product_reviews_shortcode id="'.$product->id.'"]' );
-}
-
-function product_reviews_shortcode( $atts ) {
-    
-    $atts = shortcode_atts( array(
-        'id' => ''
-    ), $atts, 'product_reviews_shortcode' );
-
-    $comments = get_comments( array(
-        'post_id' => $atts['id'] 
-    ) );
-
-    if ( ! $comments ) return '';
-
-    $html .= '<div class="woocommerce-tabs"><div id="reviews"><ol class="commentlist">';
-
-    foreach ( $comments as $comment ) {   
-      $rating = intval( get_comment_meta( $comment->comment_ID, 'rating', true ) );
-      $html .= '<li class="review">';
-      $html .= get_avatar( $comment, '60' );
-      $html .= '<div class="comment-text">';
-      if ( $rating ) $html .= wc_get_rating_html( $rating );
-      $html .= '<p class="meta"><strong class="woocommerce-review__author">';
-      $html .= get_comment_author( $comment );
-      $html .= '</strong></p>';
-      $html .= '<div class="description">';
-      $html .= $comment->comment_content;
-      $html .= '</div></div>';
-      $html .= '</li>';
-    }
-
-    $html .= '</ol></div></div>';
-
-    return $html;
-
-}
-add_shortcode( 'product_reviews_shortcode', 'product_reviews_shortcode' );
 
 // Add WooCommerce support to theme
 /*
