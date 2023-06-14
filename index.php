@@ -24,6 +24,13 @@
                 </div>
             </div>
             <div class="row mb-5">
+            <?php 
+    $args = array(
+    'style'      => 'list',
+    'hide_empty' => 1,
+    );
+    wp_list_categories($args); 
+?>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-1">
                         <a href="<?php echo get_category_link( 16 ); ?>"></a>
