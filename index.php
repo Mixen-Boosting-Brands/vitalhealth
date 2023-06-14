@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-7">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 22 ); ?>"></a>
                         <div class="overlay">
                             <h3>Neuropatía</h3>
                         </div>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-8">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 23 ); ?>"></a>
                         <div class="overlay">
                             <h3>Próstata</h3>
                         </div>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-9">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 24 ); ?>"></a>
                         <div class="overlay">
                             <h3>Diabetes</h3>
                         </div>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-10">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 25 ); ?>"></a>
                         <div class="overlay">
                             <h3>Suplementos deportivos</h3>
                         </div>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-11">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 26 ); ?>"></a>
                         <div class="overlay">
                             <h3>Sistema óseo</h3>
                         </div>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-12">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 27 ); ?>"></a>
                         <div class="overlay">
                             <h3>Cáncer</h3>
                         </div>
@@ -122,7 +122,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-13">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 28 ); ?>"></a>
                         <div class="overlay">
                             <h3>Sistema respiratorio</h3>
                         </div>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-14">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 29 ); ?>"></a>
                         <div class="overlay">
                             <h3>Adicciones</h3>
                         </div>
@@ -138,7 +138,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-15">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 30 ); ?>"></a>
                         <div class="overlay">
                             <h3>Triada para control de azúcar</h3>
                         </div>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-16">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 31 ); ?>"></a>
                         <div class="overlay">
                             <h3>Insuficiencia renal</h3>
                         </div>
@@ -154,7 +154,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-17">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 32 ); ?>"></a>
                         <div class="overlay">
                             <h3>Sistema inmunológico</h3>
                         </div>
@@ -162,7 +162,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-18">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 33 ); ?>"></a>
                         <div class="overlay">
                             <h3>Sistema hepático</h3>
                         </div>
@@ -170,7 +170,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-19">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 34 ); ?>"></a>
                         <div class="overlay">
                             <h3>Sistema renal</h3>
                         </div>
@@ -178,7 +178,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-20">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 35 ); ?>"></a>
                         <div class="overlay">
                             <h3>Colesterol y triglicéridos altos</h3>
                         </div>
@@ -186,7 +186,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-21">
-                        <a href="<?php echo get_category_link( 21 ); ?>"></a>
+                        <a href="<?php echo get_category_link( 36 ); ?>"></a>
                         <div class="overlay">
                             <h3>Piedras o cuágulos</h3>
                         </div>
