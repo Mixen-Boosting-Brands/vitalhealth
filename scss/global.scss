@@ -250,7 +250,7 @@ header {
         }
     }
 
-    @for $i from 1 through 6 {
+    @for $i from 1 through 21 {
         .boton-#{$i} {
             @include background('../images/bg-boton-productos-#{$i}.png', center, contain);
         }
