@@ -33,16 +33,17 @@
 
                 // Recorrer las categorías
                 foreach ($categories as $category):
+                $i = 1;
             ?>
                 <div class="col-6 col-md-4">
-                    <div class="boton boton-1">
+                    <div class="boton boton-<?php echo $i; ?>">
                         <a href="<?php echo get_category_link($category->term_id) ?>"></a>
                         <div class="overlay">
                             <h3><?php echo $category->name; ?></h3>
                         </div>
                     </div>
                 </div>
-            <?php endforeach; ?>
+            <?php $i++; endforeach; ?>
             </div>
             <div class="row">
                 <div class="col text-center">
