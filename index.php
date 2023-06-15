@@ -31,9 +31,10 @@
                     'hide_empty' => true // Ocultar categorías vacías
                 ));
 
+                $i = 1;
+                
                 // Recorrer las categorías
                 foreach ($categories as $category):
-                $i = 1;
             ?>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-<?php echo $i; ?>">
