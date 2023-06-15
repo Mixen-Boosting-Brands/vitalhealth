@@ -27,7 +27,7 @@
             <?php
                 // Obtener las categorías
                 $categories = get_categories(array(
-                    'taxonomy' => 'productos', // Nombre de la taxonomía asociada a las categorías de los productos
+                    'taxonomy' => 'product', // Nombre de la taxonomía asociada a las categorías de los productos
                     'hide_empty' => true // Ocultar categorías vacías
                 ));
 
