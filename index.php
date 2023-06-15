@@ -26,7 +26,10 @@
             <div class="row mb-5">
             <?php
                 // Obtener las categorías
-                $categories = get_categories();
+                $categories = get_categories(array(
+                    'taxonomy' => 'productos', // Nombre de la taxonomía asociada a las categorías de los productos
+                    'hide_empty' => true // Ocultar categorías vacías
+                ));
 
                 // Recorrer las categorías
                 foreach ($categories as $category):
