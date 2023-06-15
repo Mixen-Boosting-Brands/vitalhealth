@@ -68,11 +68,11 @@
                                 Políticas de privacidad
                             </a>
                         </li>
-                        <li class="mb-2">
+                        <!-- li class="mb-2">
                             <a href="<?php echo esc_url( get_permalink( 23 ) ); ?>">
                                 Aviso de riesgos
                             </a>
-                        </li>
+                        </li -->
                         <li class="mb-2">
                             <a href="<?php echo esc_url( get_permalink( 9 ) ); ?>">
                                 Políticas de reembolso y envío
