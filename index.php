@@ -94,7 +94,7 @@
                                                     <div class="contenido">
                                                         <h2><?php echo $product->post_title; ?></h2>
                                                         <p><?php echo get_the_excerpt($product->ID); ?></p>
-                                                        <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-outline-primary rounded-pill">
+                                                        <a href="<?php echo esc_url( get_permalink($product->ID) ); ?>" class="btn btn-outline-primary rounded-pill">
                                                             Ver más
                                                         </a>
                                                     </div>
