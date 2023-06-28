@@ -111,9 +111,84 @@
                                     <div class="col-12 col-md-10">
                                         <div class="elemento">
                                             <div class="contenido">
-                                                <h2>Omega 3</h2>
+                                                <h2>V-Omega 3</h2>
                                                 <p>1 frasco con 90 cápsulas</p>
                                                 <a href="https://vitalhealthcuu.com/product/v-omega-3/" class="btn btn-outline-primary rounded-pill">
+                                                    Ver más
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-10">
+                                        <div class="elemento">
+                                            <div class="contenido">
+                                                <h2>V-Glutation</h2>
+                                                <p>1 frasco con 60 cápsulas</p>
+                                                <a href="https://vitalhealthcuu.com/product/v-glutation/" class="btn btn-outline-primary rounded-pill">
+                                                    Ver más
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-10">
+                                        <div class="elemento">
+                                            <div class="contenido">
+                                                <h2>V-Italay</h2>
+                                                <p>1 frasco con 60 cápsulas</p>
+                                                <a href="https://vitalhealthcuu.com/product/v-italay/" class="btn btn-outline-primary rounded-pill">
+                                                    Ver más
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-10">
+                                        <div class="elemento">
+                                            <div class="contenido">
+                                                <h2>V-Asculax</h2>
+                                                <p>1 frasco con 60 cápsulas</p>
+                                                <a href="https://vitalhealthcuu.com/product/v-asculax/" class="btn btn-outline-primary rounded-pill">
+                                                    Ver más
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-10">
+                                        <div class="elemento">
+                                            <div class="contenido">
+                                                <h2>V-Itax</h2>
+                                                <p>1 frasco con 60 cápsulas</p>
+                                                <a href="https://vitalhealthcuu.com/product/v-itax/" class="btn btn-outline-primary rounded-pill">
+                                                    Ver más
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-10">
+                                        <div class="elemento">
+                                            <div class="contenido">
+                                                <h2>V-LoveKafé</h2>
+                                                <p>1 bolsa de 150 g</p>
+                                                <a href="https://vitalhealthcuu.com/product/v-lovekafe/" class="btn btn-outline-primary rounded-pill">
                                                     Ver más
                                                 </a>
                                             </div>
