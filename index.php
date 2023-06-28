@@ -106,6 +106,21 @@
                             <?php else: ?>
                                 <p>No se encontraron elementos.</p>
                             <?php endif; ?>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-10">
+                                        <div class="elemento">
+                                            <div class="contenido">
+                                                <h2>Omega 3</h2>
+                                                <p>1 frasco con 90 cápsulas</p>
+                                                <a href="https://vitalhealthcuu.com/product/v-omega-3/" class="btn btn-outline-primary rounded-pill">
+                                                    Ver más
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- If we need navigation buttons -->
