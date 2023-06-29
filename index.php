@@ -70,42 +70,6 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <?php
-                                $args = array(
-                                    'post_type' => 'product',
-                                    'tax_query' => array(
-                                        array(
-                                            'taxonomy' => 'product_cat',
-                                            'field'    => 'slug',
-                                            'terms'    => 'triada-para-control-de-azucar',
-                                        ),
-                                    ),
-                                );
-
-                                $products = get_posts($args);
-
-                                if ($products):
-                            ?>
-                                <?php foreach ($products as $product): ?>
-                                    <div class="swiper-slide">
-                                        <div class="row">
-                                            <div class="col-12 col-md-10">
-                                                <div class="elemento">
-                                                    <div class="contenido">
-                                                        <h2><?php echo $product->post_title; ?></h2>
-                                                        <p><?php echo get_the_excerpt($product->ID); ?></p>
-                                                        <a href="<?php echo esc_url( get_permalink($product->ID) ); ?>" class="btn btn-outline-primary rounded-pill">
-                                                            Ver más
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php endforeach; ?>
-                            <?php else: ?>
-                                <p>No se encontraron elementos.</p>
-                            <?php endif; ?>
                             <div class="swiper-slide">
                                 <div class="row">
                                     <div class="col-12 col-md-10">
@@ -196,6 +160,42 @@
                                     </div>
                                 </div>
                             </div>
+                            <?php
+                                $args = array(
+                                    'post_type' => 'product',
+                                    'tax_query' => array(
+                                        array(
+                                            'taxonomy' => 'product_cat',
+                                            'field'    => 'slug',
+                                            'terms'    => 'triada-para-control-de-azucar',
+                                        ),
+                                    ),
+                                );
+
+                                $products = get_posts($args);
+
+                                if ($products):
+                            ?>
+                                <?php foreach ($products as $product): ?>
+                                    <div class="swiper-slide">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10">
+                                                <div class="elemento">
+                                                    <div class="contenido">
+                                                        <h2><?php echo $product->post_title; ?></h2>
+                                                        <p><?php echo get_the_excerpt($product->ID); ?></p>
+                                                        <a href="<?php echo esc_url( get_permalink($product->ID) ); ?>" class="btn btn-outline-primary rounded-pill">
+                                                            Ver más
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <p>No se encontraron elementos.</p>
+                            <?php endif; ?>
                         </div>
 
                         <!-- If we need navigation buttons -->

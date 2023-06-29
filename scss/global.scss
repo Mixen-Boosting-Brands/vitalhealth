@@ -132,6 +132,7 @@ header {
     background: rgb(79,135,19);
     padding: 10px 30px !important;
     @include transition(ease, 0.3s);
+    z-index: 999;
 
     #logo-navbar {
         width: 100px !important;
