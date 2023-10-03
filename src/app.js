@@ -7,6 +7,7 @@ import '../src/smooth-scrolling';
 import '../src/form-ajax';
 import '../src/aos';
 import '../src/carousels';
+import '../src/modals';
 
 // Header
 $(function () {

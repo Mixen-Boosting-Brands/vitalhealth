@@ -242,6 +242,44 @@
         </div>
     </section>
 
+    <section id="testimonios">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h1 class="text-uppercase">Testimonios VitalHealth CUU</h1>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col text-center">
+                     <!-- Slider main container -->
+                     <div class="swiper-testimonios">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-10">
+                                        <div class="elemento">
+                                            <div class="contenido">
+                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-video-id="sPzmEJcjmP0">
+                                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonial.png" alt="" class="img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="nuestros-valores" class="fondo-blanco py-60">
         <div class="container">
             <div class="row mb-5">
