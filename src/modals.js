@@ -16,6 +16,9 @@ if (modalContenidoVariable) {
     });
 
     modalContenidoVariable.addEventListener('hidden.bs.modal', event => {
+        // Update the modal's content.
+        const iframeYoutube = modalContenidoVariable.querySelector('.iframe-youtube');
+
         iframeYoutube.src = ``;
     });
 }
