@@ -41,7 +41,10 @@
                         <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> id="btn-nav-3" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#nuestros-productos">Productos</a>
                     </li>
                     <li>
-                        <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> id="btn-nav-4" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#oportunidad-de-crecimiento-top">Oportunidad</a>
+                        <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> id="btn-nav-4" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#testimonios">Testimonios</a>
+                    </li>
+                    <li>
+                        <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> id="btn-nav-5" href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#oportunidad-de-crecimiento-top">Oportunidad</a>
                     </li>
                     <li>
                         <a href="<?php echo esc_url( get_permalink( 5 ) ); ?>">Tienda</a>
@@ -106,6 +109,9 @@
                             </li>
                             <li class="list-inline-item">
                                 <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#nuestros-productos">Productos</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#testimonios">Testimonios</a>
                             </li>
                             <li class="list-inline-item">
                                 <a <?php if( is_home() ): ?>class="anchor"<?php endif; ?> href="<?php if( !is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#oportunidad-de-crecimiento-top">Oportunidad</a>
