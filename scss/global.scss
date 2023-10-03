@@ -328,6 +328,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
 
             .contenido {
                 color: $text-brown;
