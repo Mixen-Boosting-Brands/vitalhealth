@@ -261,7 +261,7 @@
                                     <div class="col-12 col-md-10">
                                         <div class="elemento">
                                             <div class="contenido">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-video-id="t-jCWj-x2fw">
+                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="t-jCWj-x2fw">
                                                     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-1.png" alt="" class="img-fluid">
                                                 </a>
                                             </div>
@@ -274,7 +274,7 @@
                                     <div class="col-12 col-md-10">
                                         <div class="elemento">
                                             <div class="contenido">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-video-id="oL5Vi7VBTmg">
+                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="oL5Vi7VBTmg">
                                                     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-2.png" alt="" class="img-fluid">
                                                 </a>
                                             </div>
@@ -287,7 +287,7 @@
                                     <div class="col-12 col-md-10">
                                         <div class="elemento">
                                             <div class="contenido">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-video-id="sPzmEJcjmP0">
+                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="sPzmEJcjmP0">
                                                     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-3.png" alt="" class="img-fluid">
                                                 </a>
                                             </div>
@@ -300,8 +300,35 @@
                                     <div class="col-12 col-md-10">
                                         <div class="elemento">
                                             <div class="contenido">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-video-id="twRV9IvbOmM">
+                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="twRV9IvbOmM">
                                                     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-4.png" alt="" class="img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-10">
+                                        <div class="elemento">
+                                            <div class="contenido">
+                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="PoK5lUiXVBc">
+                                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-5.png" alt="" class="img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-10">
+                                        <div class="elemento">
+                                            <div class="contenido">
+                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="SihXGIK7_i4">
+                                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-6.png" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                         </div>
