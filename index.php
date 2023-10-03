@@ -321,8 +321,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                            <div class="swiper-slide">
                                 <div class="row">
                                     <div class="col-12 col-md-10">
                                         <div class="elemento">
