@@ -13,5 +13,9 @@ if (modalContenidoVariable) {
         const iframeYoutube = modalContenidoVariable.querySelector('.iframe-youtube');
 
         iframeYoutube.src = `https://www.youtube.com/embed/${videoId}`;
-    })
+    });
+
+    modalContenidoVariable.addEventListener('hidden.bs.modal', event => {
+        iframeYoutube.src = ``;
+    });
 }
