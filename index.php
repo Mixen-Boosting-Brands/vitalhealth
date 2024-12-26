@@ -13,7 +13,9 @@
     </section>
 
     <section id="descanso-vegetales">
-        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/bg-descanso-vegetales.jpg" alt="" class="img-fluid bg-descanso-vegetales">
+        <img src="<?php echo esc_url(
+            get_template_directory_uri()
+        ); ?>/assets/images/bg-descanso-vegetales.jpg" alt="" class="img-fluid bg-descanso-vegetales">
     </section>
 
     <section id="nuestros-productos" class="py-60">
@@ -25,30 +27,34 @@
             </div>
             <div class="row mb-5">
             <?php
-                // Obtener las categorías
-                $categories = get_categories(array(
-                    'taxonomy' => 'product_cat', // Nombre de la taxonomía asociada a las categorías de los productos
-                    'hide_empty' => true // Ocultar categorías vacías
-                ));
+            // Obtener las categorías
+            $categories = get_categories([
+                "taxonomy" => "product_cat", // Nombre de la taxonomía asociada a las categorías de los productos
+                "hide_empty" => true, // Ocultar categorías vacías
+            ]);
 
-                $i = 1;
-                
-                // Recorrer las categorías
-                foreach ($categories as $category):
-            ?>
+            $i = 1;
+
+            // Recorrer las categorías
+            foreach ($categories as $category): ?>
                 <div class="col-6 col-md-4">
                     <div class="boton boton-<?php echo $i; ?>">
-                        <a href="<?php echo get_category_link($category->term_id) ?>"></a>
+                        <a href="<?php echo get_category_link(
+                            $category->term_id
+                        ); ?>"></a>
                         <div class="overlay">
                             <h3><?php echo $category->name; ?></h3>
                         </div>
                     </div>
                 </div>
-            <?php $i++; endforeach; ?>
+            <?php $i++;endforeach;
+            ?>
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <a class="btn btn-outline-primary btn-lg" href="<?php echo esc_url( get_permalink( 5 ) ); ?>">Ver todos los productos</a>
+                    <a class="btn btn-outline-primary btn-lg" href="<?php echo esc_url(
+                        get_permalink(5)
+                    ); ?>">Ver todos los productos</a>
                 </div>
             </div>
         </div>
@@ -161,21 +167,21 @@
                                 </div>
                             </div>
                             <?php
-                                $args = array(
-                                    'post_type' => 'product',
-                                    'tax_query' => array(
-                                        array(
-                                            'taxonomy' => 'product_cat',
-                                            'field'    => 'slug',
-                                            'terms'    => 'triada-para-control-de-azucar',
-                                        ),
-                                    ),
-                                );
+                            $args = [
+                                "post_type" => "product",
+                                "tax_query" => [
+                                    [
+                                        "taxonomy" => "product_cat",
+                                        "field" => "slug",
+                                        "terms" =>
+                                            "triada-para-control-de-azucar",
+                                    ],
+                                ],
+                            ];
 
-                                $products = get_posts($args);
+                            $products = get_posts($args);
 
-                                if ($products):
-                            ?>
+                            if ($products): ?>
                                 <?php foreach ($products as $product): ?>
                                     <div class="swiper-slide">
                                         <div class="row">
@@ -183,8 +189,14 @@
                                                 <div class="elemento">
                                                     <div class="contenido">
                                                         <h2><?php echo $product->post_title; ?></h2>
-                                                        <p><?php echo get_the_excerpt($product->ID); ?></p>
-                                                        <a href="<?php echo esc_url( get_permalink($product->ID) ); ?>" class="btn btn-outline-primary rounded-pill">
+                                                        <p><?php echo get_the_excerpt(
+                                                            $product->ID
+                                                        ); ?></p>
+                                                        <a href="<?php echo esc_url(
+                                                            get_permalink(
+                                                                $product->ID
+                                                            )
+                                                        ); ?>" class="btn btn-outline-primary rounded-pill">
                                                             Ver más
                                                         </a>
                                                     </div>
@@ -195,7 +207,8 @@
                                 <?php endforeach; ?>
                             <?php else: ?>
                                 <p>No se encontraron elementos.</p>
-                            <?php endif; ?>
+                            <?php endif;
+                            ?>
                         </div>
 
                         <!-- If we need navigation buttons -->
@@ -208,7 +221,9 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <a class="btn btn-outline-primary btn-lg" href="<?php echo esc_url( get_permalink( 5 ) ); ?>">Ver todos los productos</a>
+                    <a class="btn btn-outline-primary btn-lg" href="<?php echo esc_url(
+                        get_permalink(5)
+                    ); ?>">Ver todos los productos</a>
                 </div>
             </div>
         </div>
@@ -221,20 +236,30 @@
                 <div class="col-12 col-lg-4 my-auto order-lg-2">
                     <h1 class="text-uppercase">¿Qué es</h1>
                     <h2 class="text-uppercase mb-4">VitalHealth?</h2>
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/que-es-vitalhealth/ico-1.svg" alt="" class="img-fluid">
+                    <img src="<?php echo esc_url(
+                        get_template_directory_uri()
+                    ); ?>/assets/images/que-es-vitalhealth/ico-1.svg" alt="" class="img-fluid">
                     <p>Nuestros fundadores cuentan con una amplia trayectoria en la industria de la salud y de negocios.</p>
                 </div>
                 <div class="col-12 col-lg-4 my-auto order-lg-3">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/que-es-vitalhealth/ico-2.svg" alt="" class="img-fluid">
+                    <img src="<?php echo esc_url(
+                        get_template_directory_uri()
+                    ); ?>/assets/images/que-es-vitalhealth/ico-2.svg" alt="" class="img-fluid">
                     <p>Nuestras oficinas corporativas cuentan con un equipo gerencial preparado para el crecimiento exponencial.</p>
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/que-es-vitalhealth/ico-3.svg" alt="" class="img-fluid">
+                    <img src="<?php echo esc_url(
+                        get_template_directory_uri()
+                    ); ?>/assets/images/que-es-vitalhealth/ico-3.svg" alt="" class="img-fluid">
                     <p>Contamos con un sistema educativo que te permitirá aprender cómo desarrollar tu negocio, desde el afiliado más nuevo hasta los más capacitados.</p>
                 </div>
                 <div class="col-12 col-lg-4 my-auto order-lg-1">
                     <div class="fondo-verde">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/que-es-vitalhealth/ico-4.svg" alt="" class="img-fluid">
+                        <img src="<?php echo esc_url(
+                            get_template_directory_uri()
+                        ); ?>/assets/images/que-es-vitalhealth/ico-4.svg" alt="" class="img-fluid">
                         <p class="texto-blanco">Somos una empresa libre de deudas.</p>
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/que-es-vitalhealth/ico-5.svg" alt="" class="img-fluid">
+                        <img src="<?php echo esc_url(
+                            get_template_directory_uri()
+                        ); ?>/assets/images/que-es-vitalhealth/ico-5.svg" alt="" class="img-fluid">
                         <p class="texto-blanco">Fabricamos nuestros propios productos, eliminando gastos intermediarios.</p>
                     </div>
                 </div>
@@ -242,7 +267,7 @@
         </div>
     </section>
 
-    <section id="testimonios" class="py-60">
+    <!-- section id="testimonios" class="py-60">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">
@@ -251,18 +276,17 @@
             </div>
             <div class="row mb-5">
                 <div class="col text-center">
-                     <!-- Slider main container -->
                      <div class="swiper-testimonios">
-                        <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
                             <div class="swiper-slide">
                                 <div class="row">
                                     <div class="col-12 col-md-10">
                                         <div class="elemento">
                                             <div class="contenido">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="t-jCWj-x2fw">
-                                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-1.png" alt="" class="img-fluid">
+                                                    <img src="<?php echo esc_url(
+                                                        get_template_directory_uri()
+                                                    ); ?>/assets/images/thumb-testimonio-1.png" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                         </div>
@@ -275,7 +299,9 @@
                                         <div class="elemento">
                                             <div class="contenido">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="oL5Vi7VBTmg">
-                                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-2.png" alt="" class="img-fluid">
+                                                    <img src="<?php echo esc_url(
+                                                        get_template_directory_uri()
+                                                    ); ?>/assets/images/thumb-testimonio-2.png" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                         </div>
@@ -288,7 +314,9 @@
                                         <div class="elemento">
                                             <div class="contenido">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="sPzmEJcjmP0">
-                                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-3.png" alt="" class="img-fluid">
+                                                    <img src="<?php echo esc_url(
+                                                        get_template_directory_uri()
+                                                    ); ?>/assets/images/thumb-testimonio-3.png" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                         </div>
@@ -301,7 +329,9 @@
                                         <div class="elemento">
                                             <div class="contenido">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="twRV9IvbOmM">
-                                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-4.png" alt="" class="img-fluid">
+                                                    <img src="<?php echo esc_url(
+                                                        get_template_directory_uri()
+                                                    ); ?>/assets/images/thumb-testimonio-4.png" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                         </div>
@@ -314,7 +344,9 @@
                                         <div class="elemento">
                                             <div class="contenido">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="PoK5lUiXVBc">
-                                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-5.png" alt="" class="img-fluid">
+                                                    <img src="<?php echo esc_url(
+                                                        get_template_directory_uri()
+                                                    ); ?>/assets/images/thumb-testimonio-5.png" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                         </div>
@@ -327,7 +359,9 @@
                                         <div class="elemento">
                                             <div class="contenido">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-contenido-variable" data-bs-keyboard="true" data-bs-video-id="SihXGIK7_i4">
-                                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/thumb-testimonio-6.png" alt="" class="img-fluid">
+                                                    <img src="<?php echo esc_url(
+                                                        get_template_directory_uri()
+                                                    ); ?>/assets/images/thumb-testimonio-6.png" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                         </div>
@@ -336,14 +370,13 @@
                             </div>
                         </div>
 
-                        <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section -->
 
     <section id="nuestros-valores" class="fondo-blanco py-60">
         <div class="container">
@@ -389,11 +422,15 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-6 position-relative">
-                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/ico-planta.svg" alt="" class="img-fluid mb-3">
+                            <img src="<?php echo esc_url(
+                                get_template_directory_uri()
+                            ); ?>/assets/images/ico-planta.svg" alt="" class="img-fluid mb-3">
                             <p>Nuestros ingredientes y mecanismos satisfacen todos los estándares internacionales de calidad y seguridad.</p>
                         </div>
                         <div class="col-12 col-lg-6 position-relative">
-                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/ico-planta.svg" alt="" class="img-fluid mb-3">
+                            <img src="<?php echo esc_url(
+                                get_template_directory_uri()
+                            ); ?>/assets/images/ico-planta.svg" alt="" class="img-fluid mb-3">
                             <p>Controlamos todo el proceso de fabricación, desde la formulación hasta envío a cliente final.</p>
                         </div>
                     </div>
@@ -409,14 +446,18 @@
                     <h1 class="text-uppercase">Certificaciones</h1>
                 </div>
                 <div class="col-12 col-lg-10 offset-lg-1">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/certificaciones.png" alt="" class="img-fluid">
+                    <img src="<?php echo esc_url(
+                        get_template_directory_uri()
+                    ); ?>/assets/images/certificaciones.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
 
     <section id="oportunidad-de-crecimiento-top" class="fondo-blanco">
-        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/bg-oportunidad-de-crecimiento.png" alt="" class="img-fluid bg-oportunidad-de-crecimiento">
+        <img src="<?php echo esc_url(
+            get_template_directory_uri()
+        ); ?>/assets/images/bg-oportunidad-de-crecimiento.png" alt="" class="img-fluid bg-oportunidad-de-crecimiento">
         <div class="titulo">
             <h1 class="text-uppercase">
                 Oportunidad de crecimiento
@@ -435,7 +476,9 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-6 my-auto text-center">
-                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/etapas-de-crecimiento.svg" alt="" class="img-fluid mb-4 mb-lg-0">
+                            <img src="<?php echo esc_url(
+                                get_template_directory_uri()
+                            ); ?>/assets/images/etapas-de-crecimiento.svg" alt="" class="img-fluid mb-4 mb-lg-0">
                         </div>
                         <div class="col-12 col-lg-6 my-auto">
                             <h5 class="text-purple text-uppercase">En redes de mercadeo hay distintas fases de crecimiento de una empresa multinivel</h5>
@@ -448,7 +491,9 @@
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 col-lg-6 my-auto text-center">
-                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/solidez.svg" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(
+                                get_template_directory_uri()
+                            ); ?>/assets/images/solidez.svg" alt="" class="img-fluid">
                             <h2 class="mb-4 mb-lg-0">Solidez</h2>
                         </div>
                         <div class="col-12 col-lg-6 my-auto">

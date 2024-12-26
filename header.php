@@ -180,7 +180,7 @@
      echo esc_url(home_url());
  endif; ?>#nuestros-productos">Productos</a>
                             </li>
-                            <li class="list-inline-item">
+                            <!-- li class="list-inline-item">
                                 <a <?php if (
                                     is_home()
                                 ): ?>class="anchor"<?php endif; ?> href="<?php if (
@@ -188,7 +188,7 @@
  ):
      echo esc_url(home_url());
  endif; ?>#testimonios">Testimonios</a>
-                            </li>
+ </li -->
                             <li class="list-inline-item">
                                 <a <?php if (
                                     is_home()
