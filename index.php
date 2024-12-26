@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h1 class="text-uppercase">Nuestros productos te ayudan con:</h1>
+                    <h1 class="text-uppercase">Productos</h1>
                 </div>
             </div>
             <div class="row mb-5">
