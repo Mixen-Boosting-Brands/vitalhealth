@@ -3,7 +3,9 @@
             <div class="row mb-5">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <a href="/">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-footer.svg" alt="Logo de VitalHealth" class="logo img-fluid mb-3 mb-lg-5">
+                        <img src="<?php echo esc_url(
+                            get_template_directory_uri()
+                        ); ?>/assets/images/logo-footer.svg" alt="Logo de VitalHealth" class="logo img-fluid mb-3 mb-lg-5">
                     </a>
                     <ul class="social list-inline">
                         <li class="list-inline-item">
@@ -34,11 +36,6 @@
                     </h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="mailto:contacto@vitalhealthglobal.com">
-                                contacto@vitalhealthglobal.com
-                            </a>
-                        </li>
-                        <li class="mb-2">
                             <address>
                                 Salvador Díaz Casas 211<br>
                                 Col. Revolución<br>
@@ -64,32 +61,32 @@
                     </h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="<?php echo esc_url( get_permalink( 3 ) ); ?>">
+                            <a href="<?php echo esc_url(get_permalink(3)); ?>">
                                 Políticas de privacidad
                             </a>
                         </li>
                         <!-- li class="mb-2">
-                            <a href="<?php echo esc_url( get_permalink( 23 ) ); ?>">
+                            <a href="<?php echo esc_url(get_permalink(23)); ?>">
                                 Aviso de riesgos
                             </a>
                         </li -->
                         <li class="mb-2">
-                            <a href="<?php echo esc_url( get_permalink( 9 ) ); ?>">
+                            <a href="<?php echo esc_url(get_permalink(9)); ?>">
                                 Políticas de reembolso y envío
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="<?php echo esc_url( get_permalink( 25 ) ); ?>">
+                            <a href="<?php echo esc_url(get_permalink(25)); ?>">
                                 Términos y condiciones
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="<?php echo esc_url( get_permalink( 30 ) ); ?>">
+                            <a href="<?php echo esc_url(get_permalink(30)); ?>">
                                 Políticas de spam
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="<?php echo esc_url( get_permalink( 32 ) ); ?>">
+                            <a href="<?php echo esc_url(get_permalink(32)); ?>">
                                 Aviso legal
                             </a>
                         </li>
@@ -120,7 +117,9 @@
                             <i class="fa-brands fa-cc-paypal" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus" data-bs-content="PayPal"></i>
                         </li>
                         <li class="list-inline-item">
-                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icons8-mercado-pago.svg" alt="" class="img-fluid" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus" data-bs-content="Mercado Pago">
+                            <img src="<?php echo esc_url(
+                                get_template_directory_uri()
+                            ); ?>/assets/images/icons8-mercado-pago.svg" alt="" class="img-fluid" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus" data-bs-content="Mercado Pago">
                         </li>
                     </ul>
                 </div>
@@ -149,6 +148,8 @@
         </div>
     </div>
 
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/app.bundle.js"></script>
+    <script src="<?php echo esc_url(
+        get_template_directory_uri()
+    ); ?>/assets/js/app.bundle.js"></script>
 </body>
 </html>
