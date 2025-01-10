@@ -5,7 +5,7 @@
                     <a href="/">
                         <img src="<?php echo esc_url(
                             get_template_directory_uri()
-                        ); ?>/assets/images/logo-footer.svg" alt="Logo de VitalHealth" class="logo img-fluid mb-3 mb-lg-5">
+                        ); ?>/assets/images/logo-footer.jpg" alt="Logo de VitalHealth" class="logo img-fluid mb-3 mb-lg-5">
                     </a>
                     <ul class="social list-inline">
                         <li class="list-inline-item">
