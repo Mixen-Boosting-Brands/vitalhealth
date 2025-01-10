@@ -49,7 +49,7 @@
             ); ?>">
                 <img class="logo img-fluid" src="<?php echo esc_url(
                     get_template_directory_uri()
-                ); ?>/assets/images/logo.svg" alt="Logo de VitalHealth">
+                ); ?>/assets/images/logo.jpg" alt="Logo de VitalHealth">
             </a>
             <nav>
                 <ul class="list-unstyled text-uppercase">
@@ -147,7 +147,7 @@
                     <a href="<?php echo esc_url(home_url()); ?>">
                         <img src="<?php echo esc_url(
                             get_template_directory_uri()
-                        ); ?>/assets/images/logo.svg" alt="" class="logo img-fluid" id="logo-navbar">
+                        ); ?>/assets/images/logo.jpg" alt="" class="logo img-fluid" id="logo-navbar">
                     </a>
                 </div>
                 <div class="col-md-8 text-center my-auto d-none d-md-block">
