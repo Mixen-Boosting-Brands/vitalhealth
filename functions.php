@@ -673,7 +673,6 @@ function vitalhealth_add_woocommerce_support() {
 
 add_action( 'after_setup_theme', 'vitalhealth_add_woocommerce_support' );
 */ // URL redirection
-/*
 add_action("init", function () {
     wp_redirect(
         "https://wa.me/526142457665?text=Hola%20VitalHealth%20CUU,%20necesito%20informaci%C3%B3n.",
@@ -681,4 +680,3 @@ add_action("init", function () {
     );
     exit();
 });
-*/
